@@ -120,6 +120,8 @@ function App() {
     // console.log(newTodos);
 
     setTasks(newTodos);
+
+    // Set state function is not working because it is asynchronous so use callback inside. or use useEffect but it will render many times each time state changes. Depends if useState and its dependency array is not changing many times.
     // I am giving here different parameter because react does not updates state immediately so it is not getting saved as setState is asynchronous.
     saveToLocalStorage(newTodos);
   };
