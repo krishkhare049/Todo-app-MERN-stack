@@ -1,0 +1,1 @@
+Set state function is not working because it is asynchronous so use callback inside. or use useEffect but it will render many times each time state changes. Depends if useState and its dependency array is not changing many times.
